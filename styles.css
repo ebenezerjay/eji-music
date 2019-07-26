@@ -1,0 +1,61 @@
+body {
+	background-image: url("images/instrumental-improv-album-art.jpg");
+	width: 100%;
+}
+
+header {
+	background-color: black;
+	border: 2px solid black;
+	height: 165px;
+	width: 100%;
+}
+
+h1 {
+	color: #ffffff;
+	font-size: 57px;
+	width: 70%;
+}
+
+nav {
+	align-self: center;
+	flex-wrap: wrap;
+	justify-content: center;
+	width: 30%;
+}
+
+ul {
+	align-items: center;
+	display: inherit;
+	list-style: none;
+	margin-left: 0px;
+	padding-left: 0px;
+}
+
+li {
+	list-style: none;
+}
+
+main {
+	flex-wrap: wrap;
+}
+
+ /* class selectors by page order */
+
+.flex {
+	display: flex;
+}
+
+.main-image {
+	margin: auto;
+	width: 80%;
+}
+
+.list-social {
+	width: 25%;
+}
+
+.list-site-nav {
+	color: #ffffff;
+	padding: 5px;
+	width: 25%;
+}
