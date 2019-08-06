@@ -1,5 +1,7 @@
 body {
 	background-image: url("images/instrumental-improv-album-art.jpg");
+	background-repeat: repeat;
+	height: fit-content;
 	width: 100%;
 }
 
@@ -38,7 +40,7 @@ li {
 
 main {
 	flex-wrap: wrap;
-	margin: 20px;
+	margin: 5%;
 }
 
  /* class selectors by page order */
@@ -60,4 +62,21 @@ main {
 	color: #ffffff;
 	padding: 5px;
 	width: 25%;
+}
+
+.embed-section {
+	margin: 4% auto;
+}
+
+.buy-stream-links {
+	background: rgb(71, 71, 71);
+	color: #ffffff;
+}
+
+.li-buy-stream-links {
+	padding: 15px;
+}
+
+.li-a-links {
+	color: rgb(221, 77, 77);
 }
