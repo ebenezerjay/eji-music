@@ -46,7 +46,7 @@
 			</article>
 		</main>
 		<footer class="flex">
-				&copy; 2019 created by Ebenezer Jay Ingalsbe
+				&copy; 2019-<?php echo date("Y");?> created by Ebenezer Jay Ingalsbe
 		</footer>
 	<script type="text/javascript" src="main.js"></script>
 	</body>
