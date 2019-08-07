@@ -1,6 +1,6 @@
 body {
 	background-image: url("images/instrumental-improv-album-art.jpg");
-	width: 100%;
+	width: fit-content;
 }
 
 header {
@@ -44,6 +44,7 @@ main {
 footer {
 	justify-content: center;
 	margin: 5%;
+	width: 100%;
 }
  /* class selectors by page order */
 
