@@ -1,13 +1,16 @@
 body {
 	background-image: url("images/instrumental-improv-album-art.jpg");
-	width: fit-content;
+	background-repeat: no-repeat;
+	width: 100%;
 }
 
 header {
 	background-color: black;
-	border: 2px solid black;
+	border: 14px solid rgb(85, 76, 76);
+	border-radius: 5px;
 	height: 165px;
-	width: 100%;
+	margin: auto;
+	width: 88%;
 }
 
 h1 {
@@ -43,7 +46,7 @@ main {
 
 footer {
 	justify-content: center;
-	margin: 5%;
+	margin: 5% 0px;
 	width: 100%;
 }
  /* class selectors by page order */
@@ -67,6 +70,11 @@ footer {
 	width: 25%;
 }
 
+.list-site-nav:hover {
+	cursor: pointer;
+	color: red;
+}
+
 .embed-section {
 	margin: 4% auto;
 }
@@ -80,10 +88,14 @@ footer {
 	padding: 15px;
 }
 
+.li-buy-stream-links:hover {
+	color: blue;
+	cursor: pointer;
+}
+
 .li-a-links {
 	color: rgb(221, 77, 77);
 }
-
 
 /* Media queries */
 
