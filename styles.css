@@ -41,7 +41,8 @@ li {
 
 main {
 	flex-wrap: wrap;
-	margin: 5%;
+	justify-content: center;
+	width: 100%;
 }
 
 footer {
@@ -49,6 +50,7 @@ footer {
 	margin: 5% 0px;
 	width: 100%;
 }
+
  /* class selectors by page order */
 
 .flex {
@@ -56,8 +58,14 @@ footer {
 }
 
 .main-image {
-	margin: auto;
-	width: 80%;
+	margin-right: 10px;
+	width: 65%;
+}
+
+.img-section {
+	justify-content: space-between;
+	margin: 5%;
+	width: 100%;
 }
 
 .list-social {
@@ -77,6 +85,12 @@ footer {
 
 .embed-section {
 	margin: 4% auto;
+	width: 20%;
+}
+
+.buy-link-section {
+	justify-content: center;
+	width: 90%;
 }
 
 .buy-stream-links {
@@ -97,6 +111,52 @@ footer {
 	color: rgb(221, 77, 77);
 }
 
+/* Bio page */
+
+.bio-h2 {
+	font-size: 50px;
+}
+
+.bio-section {
+	background: whitesmoke;
+	border: 2px solid black;
+	justify-content: center;
+	padding: 10px;
+	width: 88%;
+}
+
+.bio-par1 {
+	font-size: 20px;
+	line-height: 120%;
+}
+
+.bio-article1 {
+	margin: 5px;
+	text-indent: 25px;
+	width: 30%;
+}
+
+.bio-par2 {
+	font-size: 20px;
+	line-height: 120%;
+}
+
+.bio-article2 {
+	margin: 5px;
+	text-indent: 25px;
+	width: 32%;
+}
+
+.bio-par3 {
+	font-size: 20px;
+	line-height: 120%;
+}
+
+.bio-article3 {
+	margin: 5px;
+	text-indent: 25px;
+	width: 32%;
+}
 /* Media queries */
 
 @media only screen and (max-width: 1000px) {
