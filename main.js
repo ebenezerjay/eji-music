@@ -57,12 +57,51 @@ function musicSection() {
 	let musicImg = new Image(500,200);
 	musicImg.src = "images/music-graphic.jpg";
 	$(popUpArticle).append(musicImg);
-	$(popUpArticle).append(<audio></audio>);
+	// soSad();
+	mrReevesClass();
+}
+
+// audio objects
+ const soSadAudio = {
+	name: "So Sad(still)",
+	src: "audio/So-Sad-(still)-copy.mp3",
+}
+
+const mrReevesAudio = {
+	name: "Mr Reeves Class",
+	src: "audio/Mr-Reeves-Class-copy.mp3",
+}
+
+const danceableKitchenAudio = {
+	name: "Danceable Kitchen",
+	src: "audio/Danceable-Kitchen-copy.wav",
+}
+
+const insertLyicsAudio = {
+	name: "Insert Lyrics Here",
+	src: "audio/Insert-lyrics-here-copy.mp3",
+}
+
+// adds the attributes to each audio element added to dom
+function addAttributes() {
+	
+}
+
+// adds and styles so sad audio
+function soSad() {
+	$(popUpArticle).append("<audio></audio>");
+	let soSadSrc = soSadAudio.src;
+	$()
+}
+
+// adds and styles Mr Reeves Class audio
+function mrReevesClass() {
+	$(popUpArticle).append("<audio></audio>");
 	$("audio").attr({
-		class: 'audio-controls',
-		controls: "",
-		src: "",
-	})
+		class: 'audio-controls flex',
+		controls: "controls",
+		src: "audio/So-Sad-(still)-copy.mp3",
+	});
 }
 
 // changes background to the epk content
