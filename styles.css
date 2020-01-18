@@ -54,6 +54,11 @@ div {
 
 img {
 	margin: 5% auto 0px auto;
+	width: 86%;
+}
+
+audio {
+	border: 1px solid #DC12E9;
 }
 
 footer {
@@ -125,6 +130,10 @@ footer {
 .div3,
 .div4:hover {
 	cursor: pointer;
+}
+
+.soSad-audio {
+	
 }
 
 .list-social {
