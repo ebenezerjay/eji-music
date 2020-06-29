@@ -1,11 +1,21 @@
 body {
-	background: linear-gradient(rgba(0,0,0,1),rgba(0,0,0,1)), url("images/trippy-shrooms-background.jpg");
+	background: url('images/starsBackground.jpg');
+	display: grid;
+	grid-template-columns: 10% 80% 10%;
+	grid-template-areas:
+	"header header header"
+	"main main main"
+	"main main main"
+	"footer footer footer";
 	height: 100vh;
 	width: 100vw;
 }
 
 header {
-	height: 165px;
+	background: 2px black linear-gradient(8deg, rgba(0,0,0,1) 18%, rgba(145,55,162,1) 41%, rgba(253,29,29,1) 69%, rgba(0,0,0,1) 79%);
+	border-radius: 38%;
+	grid-area: header;
+	height: fit-content;
 	justify-content: flex-end;
 	margin: 5px auto;
 	width: 88%;
@@ -41,15 +51,9 @@ li {
 
 main {
 	flex-wrap: wrap;
+	grid-area: main;
 	justify-content: center;
 	width: 100%;
-}
-
-div {
-	/* border: 2px solid white; */
-	height: 59vh;
-	margin-left: 3px;
-	width: 49%;
 }
 
 img {
@@ -62,25 +66,11 @@ audio {
 }
 
 footer {
+	grid-area: footer;
 	justify-content: center;
 	color: whitesmoke;
 	width: 100%;
 }
-
-/* background  */
-
-.flashlight {
-	position: absolute;
-	top: 0px;
-	left: 0px;
-	width: 100vw;
-	height: 140vh;
-	background: url("images/trees-n-rocks.jpg");
-	background-size: 69%;
-	background-repeat: repeat;
-	clip: rect(0px,100px,100px,0px);
-}
-
 
  /* class selectors by page order */
 
@@ -88,52 +78,9 @@ footer {
 	display: flex;
 }
 
-.contentBox-section {
-	border: 2px solid #DC12E9;
-	background-image: url("images/Chronicles-of-time-album-art/Chronicles-of-Time-Vol-1.jpg");
-	background-repeat: no-repeat;
-	background-size: 100%;
-	height: 120vh;
-	justify-content: space-between;
-	margin: 5%;
-	width: 80%;
-	z-index: 99;
-}
-
-.popUp-article {
-	color: #ffffff;
-	flex-wrap: wrap;
-	justify-content: center;
-	width: 100%;
-}
-
 .main-image {
 	margin: auto;
 	width: 65%;
-}
-
-.enter-button {
-	/* align-self: center; */
-	color: whitesmoke;
-	height: fit-content;
-	margin: 0px auto;
-	width: fit-content;
-}
-
-.enter-button:hover {
-	cursor: pointer;
-	color: #DC12E9;
-}
-
-.div1,
-.div2,
-.div3,
-.div4:hover {
-	cursor: pointer;
-}
-
-.soSad-audio {
-	
 }
 
 .list-social {
@@ -157,7 +104,7 @@ footer {
 }
 
 .buy-stream-links {
-	background: rgb(71, 71, 71);
+	background: 2px black linear-gradient(8deg, rgba(0,0,0,1) 18%, rgba(145,55,162,1) 41%, rgba(253,29,29,1) 69%, rgba(0,0,0,1) 79%);
 	border-radius: 25px;
 	color: #ffffff;
 	position: fixed;
@@ -171,7 +118,8 @@ footer {
 	padding: 15px;
 }
 
-.li-buy-stream-links:hover {
+.li-buy-stream-links:hover,
+.li-a-links:hover {
 	color: blue;
 	cursor: pointer;
 }
