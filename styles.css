@@ -1,5 +1,5 @@
 body {
-	background: url('images/starsBackground.jpg');
+	background-image: url('images/starsBackground.jpg');
 	display: grid;
 	grid-template-columns: 10% 80% 10%;
 	grid-template-areas:
