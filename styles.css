@@ -1,9 +1,11 @@
 body {
-	background-image: url('images/starsBackground.jpg');
+	background: center url('images/eb-closeup-variations/eb-bricks.jpg');
 	display: grid;
 	grid-template-columns: 10% 80% 10%;
+	grid-template-rows: 20% 70% 10%;
 	grid-template-areas:
 	"header header header"
+	"main main main"
 	"main main main"
 	"main main main"
 	"footer footer footer";
@@ -12,13 +14,11 @@ body {
 }
 
 header {
-	background: 2px black linear-gradient(8deg, rgba(0,0,0,1) 18%, rgba(145,55,162,1) 41%, rgba(253,29,29,1) 69%, rgba(0,0,0,1) 79%);
-	border-radius: 38%;
+	/* background: 2px black linear-gradient(8deg, rgba(0,0,0,1) 18%, rgba(145,55,162,1) 41%, rgba(253,29,29,1) 69%, rgba(0,0,0,1) 79%); */
+	border-radius: 25px;
 	grid-area: header;
+	justify-content: center;
 	height: fit-content;
-	justify-content: flex-end;
-	margin: 5px auto;
-	width: 88%;
 }
 
 h1 {
@@ -31,15 +31,13 @@ h2 {
 }
 
 nav {
-	align-self: center;
-	flex-wrap: wrap;
-	justify-content: center;
-	width: 30%;
+	grid-area: nav;
+	justify-content: space-between;
+	width: 90%;
 }
 
 ul {
 	align-items: center;
-	display: inherit;
 	list-style: none;
 	margin-left: 0px;
 	padding-left: 0px;
@@ -56,20 +54,24 @@ main {
 	width: 100%;
 }
 
-img {
+section{
+	width: 100%;
+}
+
+/* img {
 	margin: 5% auto 0px auto;
 	width: 86%;
-}
+} */
 
 audio {
 	border: 1px solid #DC12E9;
 }
 
 footer {
+	color: whitesmoke;
+	flex-wrap: wrap;
 	grid-area: footer;
 	justify-content: center;
-	color: whitesmoke;
-	width: 100%;
 }
 
  /* class selectors by page order */
@@ -78,9 +80,14 @@ footer {
 	display: flex;
 }
 
-.main-image {
-	margin: auto;
-	width: 65%;
+.ul-social-links {
+	justify-content: flex-end;
+	width: 30%;
+}
+
+.ul-site-links {
+	justify-content: space-between;
+	width: 35%;
 }
 
 .list-social {
@@ -89,13 +96,24 @@ footer {
 
 .list-site-nav {
 	color: #ffffff;
+	font-size: 25px;
+	margin-top: 5px;
 	padding: 5px;
-	width: 25%;
+	width: 100%;
 }
 
-.list-site-nav:hover {
+.li-site-links:hover {
+	color: #b82500;
 	cursor: pointer;
-	color: red;
+}
+
+.li-site-links {
+	
+	color: #0202e9;
+}
+
+.main-img {
+	width: 80%;
 }
 
 .embed-section {
@@ -107,9 +125,6 @@ footer {
 	background: 2px black linear-gradient(8deg, rgba(0,0,0,1) 18%, rgba(145,55,162,1) 41%, rgba(253,29,29,1) 69%, rgba(0,0,0,1) 79%);
 	border-radius: 25px;
 	color: #ffffff;
-	position: fixed;
-	left: 2%;
-	bottom: 5%;
 	padding: 5px;
 	width: 95%;
 }
@@ -125,7 +140,12 @@ footer {
 }
 
 .li-a-links {
-	color: rgb(221, 77, 77);
+	color: #b82500;
+}
+
+.footer-paragraph {
+	align-self: flex-end;
+	width: 25%;
 }
 
 /* Bio page */

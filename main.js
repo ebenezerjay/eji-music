@@ -54,3 +54,10 @@ function mrReevesClass() {
 		src: "audio/So-Sad-(still)-copy.mp3",
 	});
 }
+
+// functionality for hamburger drop down icon
+$(document).ready(function() {
+	$("#nav-ham-icon-id").on('click', function() {
+		$("#ul-site-links-id").toggleClass("ul-site-links");
+	});
+});
