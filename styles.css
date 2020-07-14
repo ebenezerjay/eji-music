@@ -40,7 +40,6 @@ nav {
 
 ul {
 	align-items: center;
-	list-style: none;
 	margin-left: 0px;
 	padding-left: 0px;
 }
@@ -93,8 +92,9 @@ footer {
 }
 
 .ul-site-links {
+	height: 15vh;
 	justify-content: space-between;
-	width: 35%;
+	width: 65%;
 }
 
 .list-social {
@@ -106,11 +106,28 @@ footer {
 }
 
 .list-site-nav {
-	color: #ffffff;
+	animation-duration: 15s;
+	animation-name: home-cloud;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;	
+	background: url('images/nature:scenic/cloud-clip.png');
+	background-repeat: no-repeat;
+	background-size: 100%;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 	font-size: 25px;
-	margin-top: 5px;
-	padding: 5px;
-	width: 100%;
+	height: 100%;
+	justify-content: center;
+	width: 25%;
+}
+
+@keyframes home-cloud {
+	from {
+		width: 30%;
+	}
+
+	to {
+		width: 20%;
+	}
 }
 
 .li-site-links:hover {
@@ -120,13 +137,12 @@ footer {
 }
 
 .li-site-links {
-	
+	align-self: center;
 	color: #0202e9;
+	justify-content: center;
 }
 
-.main-img {
-	width: 80%;
-}
+
 
 .main-section {
 	background-color: cornsilk;
