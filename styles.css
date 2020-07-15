@@ -34,7 +34,7 @@ h2 {
 
 nav {
 	grid-area: nav;
-	justify-content: space-between;
+	justify-content: flex-end;
 	width: 90%;
 }
 
@@ -106,13 +106,6 @@ footer {
 }
 
 .list-site-nav {
-	animation-duration: 15s;
-	animation-name: home-cloud;
-	animation-iteration-count: infinite;
-	animation-direction: alternate;	
-	background: url('images/nature:scenic/cloud-clip.png');
-	background-repeat: no-repeat;
-	background-size: 100%;
 	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 	font-size: 25px;
 	height: 100%;
@@ -120,18 +113,7 @@ footer {
 	width: 25%;
 }
 
-@keyframes home-cloud {
-	from {
-		width: 30%;
-	}
-
-	to {
-		width: 20%;
-	}
-}
-
 .li-site-links:hover {
-	background-color: #DC12E9;
 	color: #b82500;
 	cursor: pointer;
 }
@@ -167,9 +149,27 @@ footer {
 .article-div-images-mid-left,
 .article-div-images-mid-right,
 .article-div-images-right {
-	width: 17%;
+	flex-wrap: wrap;
+	justify-content: center;
+	width: 20%;
 }
 
+.circle-img-left,
+.circle-img-mid-left,
+.circle-img-mid-right,
+.circle-img-right {
+	cursor: pointer;
+}
+
+.h2-news,
+.h2-music,
+.h2-bio,
+.h2-media {
+	align-self: flex-end;
+	justify-content: center;
+	margin: 0px;
+	text-align: center;
+}
 
 .circle-img-left {
 	animation-duration: 20s;
@@ -198,6 +198,7 @@ footer {
 	animation-name: img-right;
 	animation-iteration-count: infinite;
 	animation-direction: alternate;
+	anim
 }
 
 @keyframes img-left {
@@ -234,14 +235,6 @@ footer {
 	to {
 		margin-bottom: 200%;
 	}
-}
-
-.article-div-images-mid-right {
-	justify-content: center;
-}
-
-.article-div-images-right {
-	justify-content: flex-end;
 }
 
 .embed-section {
