@@ -29,7 +29,7 @@ h1 {
 }
 
 h2 {
-	font-family: 'Ubuntu Mono', monospace;
+	font-family: 'Red Rose', cursive;
 }
 
 nav {
@@ -198,7 +198,6 @@ footer {
 	animation-name: img-right;
 	animation-iteration-count: infinite;
 	animation-direction: alternate;
-	anim
 }
 
 @keyframes img-left {
