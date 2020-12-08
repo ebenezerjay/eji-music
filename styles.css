@@ -1,26 +1,24 @@
 body {
-	background: url('images/sea-background.png');
-	background-repeat: no-repeat ;
+	background: url('images/nature:scenic/bay-background.png');
+	background-repeat: no-repeat;
 	background-size: cover;
 	display: grid;
 	grid-template-columns: 10% 80% 10%;
-	grid-template-rows: 20% 70% 10%;
+	grid-template-rows: 5% 75% 20%;
 	grid-template-areas:
 	"header header header"
 	"main main main"
 	"main main main"
 	"main main main"
-	"footer footer footer";
-	height: 100vh;
+	"footer footer footer"
+	;
+	height: 96vh;
 	width: 100vw;
 }
 
 header {
-	/* background: 2px black linear-gradient(8deg, rgba(0,0,0,1) 18%, rgba(145,55,162,1) 41%, rgba(253,29,29,1) 69%, rgba(0,0,0,1) 79%); */
-	border-radius: 25px;
 	grid-area: header;
 	justify-content: center;
-	height: fit-content;
 }
 
 h1 {
@@ -52,13 +50,17 @@ main {
 	flex-wrap: wrap;
 	grid-area: main;
 	justify-content: center;
-	width: 100%;
 }
 
-section{
+p {
+	font-size: 16px;
+}
+
+/* section{
+	display: none;
 	height: fit-content;
 	width: 100%;
-}
+} */
 
 /* img {
 	margin: 5% auto 0px auto;
@@ -70,11 +72,11 @@ audio {
 }
 
 footer {
-	/* background: url('images/nature:scenic/dock.png'); */
+	background-image: url('./images/nature:scenic/eb-guitar-bay12.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
-	border-bottom: 1px solid black;
-	color: whitesmoke;
+	/* background-color: rgb(20, 25, 47); */
+	color: rgb(245, 245, 245);
 	flex-wrap: wrap;
 	grid-area: footer;
 	justify-content: center;
@@ -124,13 +126,25 @@ footer {
 	justify-content: center;
 }
 
+.section-content {
+	align-self: center;
+	background-color: whitesmoke;
+	border: 1px solid black;
+	border-radius: 5%;
+	display: none;
+	flex-wrap: wrap;
+	justify-content: center;
+	padding: 5px;
+	width: 50%;
+}
 
+.span-date {
+	font-style: italic;
+}
 
-.main-section {
-	background-color: cornsilk;
-	border: 2px solid black;
-	visibility: hidden;
-	width: 100%;
+.span-joe-link:hover {
+	color: blue;
+	cursor: pointer;
 }
 
 .main-img-container {
@@ -171,6 +185,14 @@ footer {
 	text-align: center;
 }
 
+/* animations */
+
+.section-content-animation {
+	animation-duration: 2s;
+	animation-name: banner;
+	animation-direction: reverse;
+}
+
 .circle-img-left {
 	animation-duration: 20s;
 	animation-name: img-left;
@@ -200,12 +222,21 @@ footer {
 	animation-direction: alternate;
 }
 
+@keyframes banner {
+	from {
+		margin-left: 0%;
+	}
+	to {
+		margin-left: 100%;
+	}
+}
+
 @keyframes img-left {
 	from {
 		margin-bottom: 0%;
 	}
 	to {
-		margin-bottom: 200%;
+		margin-bottom: 100%;
 	}
 }
 
@@ -214,7 +245,7 @@ footer {
 		margin-bottom: 0%;
 	}
 	to {
-		margin-bottom: 200%;
+		margin-bottom: 100%;
 	}
 }
 
@@ -223,7 +254,7 @@ footer {
 		margin-bottom: 0%;
 	}
 	to {
-		margin-bottom: 200%;
+		margin-bottom: 100%;
 	}
 }
 
@@ -232,9 +263,10 @@ footer {
 		margin-bottom: 0%;
 	}
 	to {
-		margin-bottom: 200%;
+		margin-bottom: 100%;
 	}
 }
+
 
 .embed-section {
 	margin: 4% auto;
